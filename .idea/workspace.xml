@@ -24,12 +24,12 @@
       <file leaf-file-name="loan_analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loan_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0689656">
-              <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.6473354">
+              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
               <folding>
                 <element signature="e#20#39#0" expanded="true" />
-                <element signature="e#451#2539#0" expanded="false" />
-                <element signature="e#2577#5337#0" expanded="false" />
+                <element signature="e#2544#5304#0" expanded="false" />
+                <element signature="e#5328#6363#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -39,14 +39,12 @@
         <entry file="file://$PROJECT_DIR$/loan_api.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.615385">
-              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
-                <element signature="e#331#506#0" expanded="false" />
-                <element signature="e#546#2827#0" expanded="false" />
-                <element signature="e#2867#3067#0" expanded="false" />
-                <element signature="e#6217#7291#0" expanded="false" />
-                <element signature="e#7347#9328#0" expanded="false" />
+                <element signature="e#2863#3063#0" expanded="false" />
+                <element signature="e#6213#7287#0" expanded="false" />
+                <element signature="e#7343#9324#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,14 +55,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/loan_analysis.py" />
         <option value="$PROJECT_DIR$/loan_api.py" />
+        <option value="$PROJECT_DIR$/loan_analysis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="87" />
+    <option name="x" value="23" />
+    <option name="y" value="23" />
     <option name="width" value="1393" />
     <option name="height" value="797" />
   </component>
@@ -245,10 +243,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="87" width="1393" height="797" extended-state="0" />
-    <editor active="false" />
+    <frame x="23" y="23" width="1393" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -288,26 +286,24 @@
     <entry file="file://$PROJECT_DIR$/loan_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.615385">
-          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
           <folding>
             <element signature="e#14#33#0" expanded="true" />
-            <element signature="e#331#506#0" expanded="false" />
-            <element signature="e#546#2827#0" expanded="false" />
-            <element signature="e#2867#3067#0" expanded="false" />
-            <element signature="e#6217#7291#0" expanded="false" />
-            <element signature="e#7347#9328#0" expanded="false" />
+            <element signature="e#2863#3063#0" expanded="false" />
+            <element signature="e#6213#7287#0" expanded="false" />
+            <element signature="e#7343#9324#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loan_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0689656">
-          <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.6473354">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
           <folding>
             <element signature="e#20#39#0" expanded="true" />
-            <element signature="e#451#2539#0" expanded="false" />
-            <element signature="e#2577#5337#0" expanded="false" />
+            <element signature="e#2544#5304#0" expanded="false" />
+            <element signature="e#5328#6363#0" expanded="false" />
           </folding>
         </state>
       </provider>
