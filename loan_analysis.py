@@ -27,7 +27,7 @@ def get_loan_schedule(**params):
     next_repayd = parse(params['next_repayd'])
     pay_day = parse(params['firstPayDate']).day
     delta = relativedelta(next_repayd, loan_date)
-    if pay_method == u'一次性还本付息':
+    if pay_method == 0:
         principal = bal
         interest = bal*ir/12.0*(delta.years*12+delta.months)
         batch_no = get_loan_batch(next_repayd, pay_day)
@@ -37,27 +37,27 @@ def get_loan_schedule(**params):
     pay_date_list = [next_repayd+relativedelta(months=pay_freq*k) for k in range(terms)]
     loan_batch_no = [get_loan_batch(k, pay_day) for k in pay_date_list]
 
-    if pay_method == u'等额本息':
+    if pay_method == 1:
         principal = [round(abs(np.ppmt(ir/12.0*pay_freq, k+1, terms, bal)),2) for k in range(terms)]
         interest = [round(abs(np.ipmt(ir/12.0*pay_freq, k+1, terms, bal)),2) for k in range(terms)]
         return {'batch_no': loan_batch_no,
                 'principal': principal,
                 'interest': interest}
-    if pay_method == u'等额本金':
+    if pay_method == 2:
         ppmt = bal*1.0/terms
         principal = [round(ppmt, 2)]*terms
         interest = [round((bal - ppmt*(k-1))*ir/12.0*pay_freq, 2) for k in range(terms)]
         return {'batch_no': loan_batch_no,
         'principal': principal,
         'interest': interest}
-    if pay_method == u'先息后本':
+    if pay_method == 3:
         principal = [0]*terms
         principal[-1] = bal
         interest = [round(bal*ir/12.0*pay_freq, 2)]*terms
         return {'batch_no': loan_batch_no,
         'principal': principal,
         'interest': interest}
-    if pay_method == u'等本等息':
+    if pay_method == 4:
         total_terms = terms + (delta.years*12+delta.months)/pay_freq - 1
         principal = [round(bal*1.0/terms, 2)]*terms
         interest = [round(bal*1.0/terms*total_terms*ir/12*pay_freq, 2)]
