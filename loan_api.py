@@ -10,9 +10,7 @@ from flask_api import FlaskAPI
 import json
 from flask import request
 
-
 app = FlaskAPI(__name__)
-
 
 def get_nextpday(x, dt='2015-02-01'):
     dt = parse(dt)
@@ -44,7 +42,6 @@ def get_loan_schedule(**params):
                 'interest': [interest]}
     pay_date_list = [next_repayd+relativedelta(months=pay_freq*k) for k in range(terms)]
     loan_batch_no = [get_loan_batch(k, pay_day) for k in pay_date_list]
-
     #if pay_method == u'等额本息':
     if pay_method == 1:
         principal = [round(abs(np.ppmt(ir/12.0*pay_freq, k+1, terms, bal)),2) for k in range(terms)]
@@ -76,7 +73,6 @@ def get_loan_schedule(**params):
         return {'batch_no': loan_batch_no,
                 'principal': principal,
                 'interest': interest}
-
 
 def get_loan_batch(dt, pay_day):
     if dt.day < pay_day:
